@@ -1,72 +1,61 @@
 # Hash Set / Membership Checking
 
-## Pattern Name
+## Pattern
 
-Hash Set / Membership Checking
-
-## When to Use
-
-Use this pattern when you need to efficiently determine whether:
-
-- a value has appeared before
-- a value already exists
-- a duplicate exists
-- an element is unique
-- an item has already been processed
+Use a **Hash Set** when you need to quickly determine whether an item has been seen before.
 
 ## Recognition Clues
 
-Look for phrases such as:
+Think Hash Set when you see:
 
-- "contains duplicate"
-- "appears more than once"
-- "already seen"
-- "have we encountered this before?"
-- "does this value exist?"
+* "contains duplicate"
+* "already seen"
+* "appears more than once"
+* "have we encountered this before?"
+* need to track unique values
 
 ## Core Idea
 
-Maintain a set of values that have already been encountered.
+```text
+item
+ ↓
+Already in set?
+ ↙        ↘
+Yes       No
+ ↓         ↓
+Found    Add it
+duplicate
+```
 
-For every new value:
+## Algorithm
 
-1. Check whether it is already in the set.
-2. If yes → the required condition has been found.
-3. If no → add it to the set.
-4. Continue.
+1. Create an empty set.
+2. Iterate through the input.
+3. Check whether the current item is in the set.
+4. If yes → return the required duplicate/found result.
+5. If no → add it to the set.
+6. Finish processing → return the required result.
 
-## Typical Complexity
+## Complexity
 
-Time: O(n) average
-
+```text
+Time:  O(n) average
 Space: O(n)
+```
 
 ## Memory Hook
 
-> "Have I seen this before?" → Think Hash Set.
+**"Have I seen this before?" → Hash Set**
 
-## Example
+## Common Mistakes
 
-Input:
-
-[5, 3, 8, 2, 5]
-
-Process:
-
-5 → not seen → add
-3 → not seen → add
-8 → not seen → add
-2 → not seen → add
-5 → already seen → duplicate
-
-Result:
-
-True
+* Creating the set outside the function.
+* Forgetting to add unseen elements.
+* Confusing a Set with a Dictionary.
+* Claiming `O(1)` space even though the set grows with input.
 
 ## Related Patterns
 
-- Hash Map
-- Frequency Counting
-- Two Sum
-- Sliding Window
-- Membership Checking
+* Frequency Counting
+* Hash Map
+* Two Pointers

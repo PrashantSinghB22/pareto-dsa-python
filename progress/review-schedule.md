@@ -9,3 +9,5 @@ This file tracks spaced-repetition reviews for problems and patterns.
 | 2026-08-09 | Contains Duplicate | Review #1 — Concept + Implementation | 4/5 | Recalled algorithm independently; implemented from memory after minor scope/indentation corrections | 2026-08-13 |
 
 | 2026-08-09 | Valid Anagram | Initial Learning | — | Implemented sorting, dictionary, and fixed-array solutions | 2026-08-10 |
+
+| 2026-08-09 | LC75 - Merge Strings Alternately | Initial Learning | — | Implemented from scratch using two independent indices | 2026-08-10 |

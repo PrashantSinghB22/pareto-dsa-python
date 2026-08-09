@@ -8,9 +8,10 @@
 # An anagram contains the same characters with the same
 # frequencies, but the characters may appear in a different order.
 #
-# Example:
-#   "anagram" + "nagaram" -> True
-#   "rat" + "car"         -> False
+# Examples:
+#
+# "anagram" + "nagaram" -> True
+# "rat"     + "car"     -> False
 #
 # ============================================================
 
@@ -23,8 +24,16 @@
 # If two strings are anagrams, sorting both strings will produce
 # the same sequence of characters.
 #
+# Example:
+#
+#     "race" → "acer"
+#     "care" → "acer"
+#
+# Since the sorted strings are equal, they are anagrams.
+#
 # Time Complexity: O(n log n)
 # Space Complexity: Depends on Python's sorting implementation
+#
 # ============================================================
 
 def valid_anagram_sorting(s, t):
@@ -43,10 +52,20 @@ def valid_anagram_sorting(s, t):
 #
 # Idea:
 # Count the frequency of every character in both strings.
-# If the frequency tables are identical, the strings are anagrams.
+#
+# If the frequency tables are identical, the strings are
+# anagrams.
+#
+# Example:
+#
+#     "aab"
+#
+#     a → 2
+#     b → 1
 #
 # Time Complexity: O(n) average
 # Space Complexity: O(n)
+#
 # ============================================================
 
 def valid_anagram(s, t):
@@ -68,10 +87,7 @@ def valid_anagram(s, t):
         else:
             t_count[char] += 1
 
-    if s_count == t_count:
-        return True
-
-    return False
+    return s_count == t_count
 
 
 # ============================================================
@@ -79,22 +95,27 @@ def valid_anagram(s, t):
 # ============================================================
 #
 # Constraint:
+#
 # The input contains only lowercase English letters a-z.
 #
 # Idea:
+#
 # There are only 26 possible characters, so we can use an array
 # of 26 counters instead of a dictionary.
 #
-# For characters in s:
-#     increase the corresponding counter.
+# For every character in s:
 #
-# For characters in t:
-#     decrease the corresponding counter.
+#     increase its counter
+#
+# For every character in t:
+#
+#     decrease its counter
 #
 # If every counter ends at zero, the strings contain exactly
 # the same characters with exactly the same frequencies.
 #
-# Character → Array index:
+# Character → Array Index:
+#
 #     'a' → 0
 #     'b' → 1
 #     'c' → 2
@@ -105,8 +126,11 @@ def valid_anagram(s, t):
 #
 #     ord(char) - ord('a')
 #
+# This converts the character into its distance from 'a'.
+#
 # Time Complexity: O(n)
 # Space Complexity: O(1)
+#
 # ============================================================
 
 def valid_anagram_array(s, t):
@@ -128,6 +152,73 @@ def valid_anagram_array(s, t):
             return False
 
     return True
+
+
+# ============================================================
+# Key Insight
+# ============================================================
+#
+# Anagram problems are not about character existence.
+#
+# They are about character FREQUENCY.
+#
+# Example:
+#
+#     "aab"
+#     "abb"
+#
+# Both contain 'a' and 'b', but their frequencies differ:
+#
+#     a → 2 vs 1
+#     b → 1 vs 2
+#
+# Therefore they are not anagrams.
+#
+# ============================================================
+
+
+# ============================================================
+# Pattern
+# ============================================================
+#
+# Pattern Name:
+# Frequency Counting
+#
+# Recognition Clues:
+#
+#     - frequency
+#     - occurrences
+#     - how many times
+#     - same characters
+#     - same elements with the same counts
+#
+# Core Idea:
+#
+#     item → frequency
+#
+# Data Structure Choice:
+#
+#     Small fixed domain → Fixed Array
+#     Flexible/unknown domain → Hash Map
+#
+# ============================================================
+
+
+# ============================================================
+# Solution Comparison
+# ============================================================
+#
+# Approach          Time          Space
+# ------------------------------------------------------------
+# Sorting           O(n log n)    Depends on sorting
+# Dictionary        O(n) avg      O(n)
+# Fixed Array       O(n)          O(1)  ⭐
+#
+# The Fixed Array is optimal when the input is restricted to
+# lowercase English letters a-z because there are only 26
+# possible characters.
+#
+# ============================================================
 
 
 # ============================================================
@@ -153,10 +244,10 @@ for s, t, expected in test_cases:
     array_result = valid_anagram_array(s, t)
 
     print(f's="{s}", t="{t}"')
-    print(f"  Sorting:   {sorting_result}")
-    print(f"  Dictionary:{dictionary_result}")
-    print(f"  Array:     {array_result}")
-    print(f"  Expected:  {expected}")
+    print(f"  Sorting:    {sorting_result}")
+    print(f"  Dictionary: {dictionary_result}")
+    print(f"  Array:      {array_result}")
+    print(f"  Expected:   {expected}")
 
     assert sorting_result == expected
     assert dictionary_result == expected
