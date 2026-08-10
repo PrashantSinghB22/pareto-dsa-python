@@ -11,3 +11,5 @@ This file tracks spaced-repetition reviews for problems and patterns.
 | 2026-08-09 | Valid Anagram | Initial Learning | — | Implemented sorting, dictionary, and fixed-array solutions | 2026-08-10 |
 
 | 2026-08-09 | LC75 - Merge Strings Alternately | Initial Learning | — | Implemented from scratch using two independent indices | 2026-08-10 |
+
+| 2026-08-10 | Two Sum | Initial Learning | — | Brute force understood; optimal Hash Map solution learned | 2026-08-11 |
