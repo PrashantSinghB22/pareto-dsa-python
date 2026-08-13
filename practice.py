@@ -1,10 +1,18 @@
-def two_sum_hashmap(nums, target):
-  seen = set()
+def is_palindrome(s):
+  left = s[0]
+  right = len(s) - 1
+  while left < right:
+    if not s[left].isalnum():
+      left += 1
+      continue
+    if not s[right].isalnum():
+      right -= 1
+      continue
+    if s[left].lower() != s[right].lower():
+      return False
 
-  for i, num in enumerate(nums):
-    needed = target - num
+    left += 1
+    right -= 1
+  return True
 
-    if needed in seen:
-      return [seen[needed], i]
 
-    seen[num] = i

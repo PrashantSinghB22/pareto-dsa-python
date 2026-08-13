@@ -13,3 +13,5 @@
 | 4 | Best Time to Buy and Sell Stock | Track Best State | O(n²) | — | O(n) | Yes | Guided | 4/5 | 2026-08-12 |
 
 | 5 | Valid Palindrome | Two Pointers | O(n) | Clean + Reverse | O(1) | Yes | Guided | 4/5 | 2026-08-13 |
+
+| 6 | Group Anagrams | Canonical Signature + Hash Map | O(n × k log k) | Sorting + Hash Map | O(n × k) | Yes | Guided | 4/5 | 2026-08-13 |
