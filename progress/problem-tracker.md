@@ -15,3 +15,5 @@
 | 5 | Valid Palindrome | Two Pointers | O(n) | Clean + Reverse | O(1) | Yes | Guided | 4/5 | 2026-08-13 |
 
 | 6 | Group Anagrams | Canonical Signature + Hash Map | O(n × k log k) | Sorting + Hash Map | O(n × k) | Yes | Guided | 4/5 | 2026-08-13 |
+
+| 7 | Product of Array Except Self | Prefix / Suffix Accumulation | O(n²) | Prefix + Suffix Products | O(n) | Yes | Guided → Independent Retrieval | 5/5 | 2026-08-15 |

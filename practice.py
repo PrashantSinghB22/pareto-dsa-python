@@ -1,18 +1,17 @@
-def is_palindrome(s):
-  left = s[0]
-  right = len(s) - 1
-  while left < right:
-    if not s[left].isalnum():
-      left += 1
-      continue
-    if not s[right].isalnum():
-      right -= 1
-      continue
-    if s[left].lower() != s[right].lower():
-      return False
+def group_anagrams_frequency(strs):
+  groups = {}
+  for word in strs:
+    count = [0] * 26
+    for char in word:
+      index = ord(char) - ord('a')
+      count[index] += 1
 
-    left += 1
-    right -= 1
-  return True
+    key = tuple(count)
 
+    if key not in groups:
+      groups[key] = [word]
+    else:
+      groups[key].append(word)
+
+  return list(groups.values())
 
