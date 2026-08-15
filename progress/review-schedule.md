@@ -17,4 +17,6 @@ This file tracks spaced-repetition reviews for problems and patterns.
 
 | 2026-08-14 | Group Anagrams | Review #1 — Optimal Concept + Implementation | 4/5 | Recalled and implemented frequency-signature approach with some help | 2026-08-17 |
 
-| 2026-08-14 | Product of Array Except Self | Initial Learning | — | Implemented brute force and optimal prefix/suffix solution; independently reconstructed optimal solution | 2026-08-15 |
+| 2026-08-15 | Product of Array Except Self | Review #1 — Optimal Concept + Implementation | 4/5 | Recalled prefix/suffix approach and reconstructed the full solution with some help | 2026-08-18 |
+
+| 2026-08-15 | Valid Parentheses | Initial Learning | — | Understood LIFO matching and implemented Stack + Hash Map solution independently | 2026-08-16 |
