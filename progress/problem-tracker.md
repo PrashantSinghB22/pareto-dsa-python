@@ -19,3 +19,5 @@
 | 7 | Product of Array Except Self | Prefix / Suffix Accumulation | O(n²) | Prefix + Suffix Products | O(n) | Yes | Guided → Independent Retrieval | 5/5 | 2026-08-15 |
 
 | 8 | Valid Parentheses | Stack / LIFO Matching | O(n) | Stack + Hash Map | O(n) | Yes | Guided → Independent | 5/5 | 2026-08-15 |
+
+| 9 | Longest Consecutive Sequence | Hash Set + Sequence Expansion | O(n log n) | Hash Set sequence-start expansion | O(n) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-16 |

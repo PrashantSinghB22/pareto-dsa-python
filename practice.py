@@ -1,12 +1,22 @@
-def product_except_self(nums):
-  result = [1] * len(nums)
+def is_valid(s):
+  mapping = {
+    "]" : "[",
+    "}" : "{",
+    ")" : "("
+  }
 
-  prefix = 1
-  for i in range(len(nums)):
-    result[i] = prefix
-    prefix = prefix * nums[i]
+  stack = []
+
+  for char in s:
+    if char in mapping.values():
+      stack.append(char)
+
+    else:
+      if not stack:
+        return False
+      if stack[-1] != mapping.values():
+        return False
+      stack.pop()
+
 
     
-
-  
-
