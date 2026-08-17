@@ -21,3 +21,5 @@
 | 8 | Valid Parentheses | Stack / LIFO Matching | O(n) | Stack + Hash Map | O(n) | Yes | Guided → Independent | 5/5 | 2026-08-15 |
 
 | 9 | Longest Consecutive Sequence | Hash Set + Sequence Expansion | O(n log n) | Hash Set sequence-start expansion | O(n) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-16 |
+
+| 10 | Container With Most Water | Two Pointers | O(n²) | Two Pointers | O(n) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-17 |

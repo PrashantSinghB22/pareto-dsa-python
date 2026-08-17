@@ -1,22 +1,22 @@
-def is_valid(s):
-  mapping = {
-    "]" : "[",
-    "}" : "{",
-    ")" : "("
-  }
+def max_water(height):
+  max_area = 0
+  left = 0
+  right = len(height) - 1
 
-  stack = []
+  while left < right:
+    width = right - left
+    current_height = min(height[left], height[right])
+    area = width * current_height
 
-  for char in s:
-    if char in mapping.values():
-      stack.append(char)
-
+    if area > max_area:
+      max_area = area
+    if height[left] < height[right]:
+      left += 1
     else:
-      if not stack:
-        return False
-      if stack[-1] != mapping.values():
-        return False
-      stack.pop()
+      right -= 1
 
+  return max_area
 
     
+
+
