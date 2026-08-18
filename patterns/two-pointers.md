@@ -44,6 +44,54 @@ Usually O(n) time and O(1) extra space.
 - Fast/slow pointers.
 - Two pointers moving at different speeds.
 
+## Variation — 3Sum
+
+### When to use it
+
+When a problem asks for three values satisfying a sum condition
+and duplicate combinations must be avoided.
+
+### Core idea
+
+Sort the array.
+
+Fix one element.
+
+Use two pointers on the remaining portion.
+
+### Logic
+
+1. Sort the array.
+2. Fix `nums[i]`.
+3. Set `left = i + 1`.
+4. Set `right = len(nums) - 1`.
+5. Target becomes `-nums[i]`.
+6. If the two-pointer sum is too small, move `left`.
+7. If too large, move `right`.
+8. If equal, record the triplet.
+9. Skip duplicates.
+
+### Important duplicate distinction
+
+Do not blindly skip every duplicate value.
+
+A duplicate value may be necessary:
+
+[-1, -1, 2]
+
+is a valid triplet.
+
+We skip duplicates when they would cause us to produce
+the same triplet again.
+
+### Related problems
+
+- Two Sum
+- 3Sum
+- 4Sum
+- Two Pointers
+- Sort + Two Pointers
+
 ## Related patterns
 
 - Track Best State

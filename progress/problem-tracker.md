@@ -23,3 +23,5 @@
 | 9 | Longest Consecutive Sequence | Hash Set + Sequence Expansion | O(n log n) | Hash Set sequence-start expansion | O(n) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-16 |
 
 | 10 | Container With Most Water | Two Pointers | O(n²) | Two Pointers | O(n) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-17 |
+
+| 11 | 3Sum | Sort + Two Pointers | O(n²) | Sort + Two Pointers | O(n²) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-18 |

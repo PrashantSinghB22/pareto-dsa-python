@@ -1,22 +1,32 @@
-def max_water(height):
-  max_area = 0
-  left = 0
-  right = len(height) - 1
+def three_sum(nums):
+  results = []
+  nums = sorted(nums)
 
-  while left < right:
-    width = right - left
-    current_height = min(height[left], height[right])
-    area = width * current_height
+  for i in range(len(nums) - 2):
 
-    if area > max_area:
-      max_area = area
-    if height[left] < height[right]:
-      left += 1
-    else:
-      right -= 1
+    if i > 0 and nums[i] == nums[i - 1]:
+        continue
 
-  return max_area
+    left = i + 1
+    right = len(nums) - 1
 
-    
+    target = -nums[i]
 
+    while left < right:
+      current_sum = nums[left] + nums[right]
 
+      if current_sum < target:
+         left += 1
+      elif current_sum > target:
+         right -= 1
+      else:
+         results.append([nums[i], nums[left], nums[right]])
+
+         left += 1
+         right -= 1
+
+         while left < right and nums[left] == nums[left - 1]:
+            left += 1
+         while left < right and nums[right] == nums[right + 1]:
+            right -= 1
+  return results
