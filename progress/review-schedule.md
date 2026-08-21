@@ -7,9 +7,9 @@ This file tracks spaced-repetition reviews for problems and patterns.
 
 | 2026-08-17 | Contains Duplicate | Review #3 — Optimal Concept + Implementation | 5/5 | Recalled hash-set membership and implemented independently | 2026-08-24 |
 
-| 2026-08-12 | Valid Anagram | Review #1 — Optimal Concept + Implementation | 5/5 | Recalled fixed-array frequency counting and implemented from memory | 2026-08-16 |
+| 2026-08-19 | Valid Anagram | Review #2 — Frequency Array + Implementation | 5/5 | Reconstructed the complete optimal solution independently from memory | 2026-08-25 |
 
-| 2026-08-14 | Two Sum | Review #2 — Optimal Concept + Implementation | 5/5 | Recalled Hash Map complement approach and implemented independently | 2026-08-19 |
+| 2026-08-19 | Two Sum | Review #3 — Hash Map + Implementation | 5/5 | Initially recalled sorted two-pointer approach; recognized the original-index requirement and reconstructed the Hash Map solution correctly | 2026-08-25 |
 
 | 2026-08-12 | Best Time to Buy and Sell Stock | Recall + Implementation | 5/5 | Recalled optimal logic and implemented from memory | 2026-08-16 |
 
@@ -29,4 +29,6 @@ This file tracks spaced-repetition reviews for problems and patterns.
 
 | 2026-08-17 | Container With Most Water | Initial Learning | 5/5 | Independently developed and implemented the Two Pointer solution after guided reasoning | 2026-08-19 |
 
-| 2026-08-18 | 3Sum | Initial Learning | 5/5 | Reconstructed Sort + Two Pointers solution after guided reasoning and independently implemented the complete function | 2026-08-20 |
+| 2026-08-19 | 3Sum | Review #2 — Sort + Two Pointers + Duplicate Handling | 4/5 | Reconstructed the implementation with guidance and independently corrected pointer/indentation logic | 2026-08-22 |
+
+| 2026-08-21 | Top K Frequent Elements | Initial Learning — Frequency Counting + Bucket Sort | 3/5 | Understood frequency counting independently; needed substantial guidance to understand frequency buckets and reconstruct the full implementation | 2026-08-23 |

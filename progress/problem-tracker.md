@@ -25,3 +25,5 @@
 | 10 | Container With Most Water | Two Pointers | O(n²) | Two Pointers | O(n) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-17 |
 
 | 11 | 3Sum | Sort + Two Pointers | O(n²) | Sort + Two Pointers | O(n²) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-18 |
+
+| 12 | Top K Frequent Elements | Frequency Counting + Bucket Sort | O(n log n) | Frequency Map + Heap O(n log k) | Frequency Map + Bucket Sort O(n) | No | Guided | 3/5 | 2026-08-23 |
