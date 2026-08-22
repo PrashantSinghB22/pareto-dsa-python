@@ -29,6 +29,8 @@ This file tracks spaced-repetition reviews for problems and patterns.
 
 | 2026-08-17 | Container With Most Water | Initial Learning | 5/5 | Independently developed and implemented the Two Pointer solution after guided reasoning | 2026-08-19 |
 
-| 2026-08-19 | 3Sum | Review #2 — Sort + Two Pointers + Duplicate Handling | 4/5 | Reconstructed the implementation with guidance and independently corrected pointer/indentation logic | 2026-08-22 |
+| 2026-08-22 | 3Sum | Review #2 — Sort + Two Pointers + Duplicate Handling | 5/5 | Independently reconstructed the complete solution, including duplicate handling | 2026-08-29 |
 
 | 2026-08-21 | Top K Frequent Elements | Initial Learning — Frequency Counting + Bucket Sort | 3/5 | Understood frequency counting independently; needed substantial guidance to understand frequency buckets and reconstruct the full implementation | 2026-08-23 |
+
+| 2026-08-22 | Valid Sudoku | Initial Learning — Hash Sets + Matrix Validation | 4/5 | Reconstructed the three-set approach and box mapping with guidance; corrected set and column-index implementation mistakes | 2026-08-26 |

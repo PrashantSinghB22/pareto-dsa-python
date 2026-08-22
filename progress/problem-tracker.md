@@ -27,3 +27,5 @@
 | 11 | 3Sum | Sort + Two Pointers | O(n²) | Sort + Two Pointers | O(n²) | Yes | Guided reasoning → Independent implementation | 5/5 | 2026-08-18 |
 
 | 12 | Top K Frequent Elements | Frequency Counting + Bucket Sort | O(n log n) | Frequency Map + Heap O(n log k) | Frequency Map + Bucket Sort O(n) | No | Guided | 3/5 | 2026-08-23 |
+
+| 13 | Valid Sudoku | Hash Sets / Matrix Validation | O(81) | Hash Sets | O(1) | Guided | Guided | 4/5 | 2026-08-26 |
